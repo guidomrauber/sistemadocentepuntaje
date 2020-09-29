@@ -38,17 +38,6 @@ require 'header.php';
 </html>
 
 
-
-
-<!--fin centro-->
-      </div>
-      </div>
-      </div>
-      <!-- /.box -->
-
-    </section>
-    <!-- /.content -->
-  </div>
 <?php 
 //}else{
 // require 'noacceso.php'; 

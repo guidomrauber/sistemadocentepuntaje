@@ -100,7 +100,7 @@
 						<li class="nav-item active"><a class="nav-link" href="actualizar.html">INGR. DATOS</a></li>
 						<li class="nav-item active"><a class="nav-link" href="consultarsaldo.php">TU PUNTAJE</a></li>
 						
-						<li class="nav-item active"><a class="nav-link" href="actualizar.html">ACTUALIZAR DATOS</a></li>
+						<li class="nav-item active"><a class="nav-link" href="actualizar.php">ACTUALIZAR DATOS</a></li>
 						<li class="nav-item active"><a class="nav-link" href="logout.php">SALIR</a></li>
 					</ul>
 				</div>

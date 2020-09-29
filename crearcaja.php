@@ -8,8 +8,8 @@
 	$cargo = $_POST['cargo'];
 	$calif = $_POST['calif'];
 	$bonif = $_POST['bonif'];
-	$Idtitulo= $_POST['Id'];
 	$Id2 = $_POST['Id'];
+	$Id = $_POST['Id'];
 	$puntaje = 0;
 	$datehoy=date("y");
 	$punt_egreso = 0;
@@ -59,12 +59,12 @@
 	// Seleccionar base de datos.
 	$db = mysql_select_db('PHPlogin',$conn) OR DIE ("Error en la base de datos: " . mysql_error());
 	// Creación y/o formación de la consulta.
-	$sql =  "INSERT INTO actualizacion ( Id_titulo,Titulo, Fecha_Egreso, Promedio, Act_Rama, Act_Cargo, Calificaciones, Curso, Puntos, Puntaje, Id) VALUES ('$Idtitulo','$titulo','$fecha','$prom','$rama','$cargo','$calif','$bonif', '$punto', '$puntaje','$Id2')";
+	$sql =  "INSERT INTO actualizacion ( Id_titulo,Titulo, Fecha_Egreso, Promedio, Act_Rama, Act_Cargo, Calificaciones, Curso, Punto, Puntaje,Id) VALUES ('$titulo','$fecha','$prom','$rama','$cargo','$calif','$bonif', '$punto', '$puntaje', '$Id2')";
 	// Ejecución y resultado de la consulta.
 	$result = mysql_query($sql,$conn);
 	if (!$result) {
 		echo "ERROR EN LA CONSULTA: " . mysql_error();
 	} else {
-		echo "<div class='alert alert-success' role='alert'><h3>TU CUENTA HA SIDO CREADO</h3>";
+		echo "<div class='alert alert-success' role='alert'><h3>TUS DATOS FUERON CREADOS</h3>";
 	}
 ?>
